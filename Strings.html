@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <p id ="de" style = "font-weight:bolder;"></p>
+      <p id ="dee" style = "font-weight:bolder;"></p>
+      <p id ="deee" style = "font-weight:bolder;"></p>
+
+    </body>
+    <script type="text/javascript">
+      var str = "I am being tested for various \"string\" methods";
+      document.write(`<h2>The length of our string is ${str.length}</h2>`);
+      document.write(`<h2>${str}</h2>`);
+      var d = "I am another test case";
+      document.getElementById("de").innerHTML = str.replace("TESTED" , "investigated");
+      document.write(`<h2>${str}</h2>`);
+      document.getElementById("dee").innerHTML = str.toUpperCase();
+
+      document.getElementById("deee").innerHTML = str.charAt(15);
+      document.write(`${str[20]}<br />`);
+      var arr = str.split(" ")
+      document.write(arr);
+
+
+    </script>
+  </html>

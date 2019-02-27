@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Basics.css">
+
+  <style>
+  body{
+    background-image:url('city.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position:right-left;
+  }
+#h01 {
+  margin: 0 0 50px 0;
+}
+#lo1 {
+  margin: 20px 0 0 0;
+}
+
+div.sticky{
+  position: sticky;
+  top:0;
+  background-color: white;
+  left:130px;
+  color:white;
+  font-weight: bolder;
+  border:1px solid white;
+}
+
+#d01{
+  border:2px solid black;
+  padding:50px;
+  width:300px;
+  box-sizing:border-box;
+  background-color:red;
+  height:auto;
+  outline-style: solid;
+  outline-color: invert;
+  outline-width: 10px;
+  outline-offset: 10px;
+
+}
+a:link{
+  border:2px solid black;
+  margin:20px;
+  padding:4px 6px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1em;
+  text-shadow: 2px 3px white;
+/* font-family: times; */
+  display: inline-block;
+  font-style: italic;
+  color:white;
+  background-color: black;
+}
+
+a:hover{
+  background-color: blue;
+  color:pink;
+}
+  </style>
+<title> Testing basic css </title>
+</head>
+<body>
+
+
+  <div class="sticky">
+    <p> I am positioned using sticky position value </p>
+  </div>
+<h1 class="heading"> Heyaa welcome to CSS,I am styled using external CSS </h1>
+<h2 class="heading"> This wont be affected coz styling is done based on class </h1>
+
+<h1 id="g01"> I am styled based on my ID </h1>
+<p>I belong a grouped selectors</p>
+<h4> and we are styled together </h4>
+<h3> cool right!! </h3>
+<div style="padding:20px 40px 50px 19px;border-color:white magenta pink yellow;border-radius: 5px;margin:50px;
+border-style: solid dotted dashed double;border-width:thick;
+background-image:url('fightclub_1280.png');color:red;">I am styled using inline css</div>
+<h1 id="h01"> Testing margin collapse </h1>
+<h2 id="l01"> Lets see what happens </h2>
+<div id="d01" style="font-size:20pt;"> I am being tested for box sizing </div>
+<hr />
+<h2 style="letter-spacing: 10px;word-spacing: 10px;line-height: 2.0;
+direction:rtl;text-shadow:2px 3px blue;
+text-transform: uppercase;color:black;text-align:justify;text-indent:50px;
+text-decoration: underline;background-color:white;"> i am a formatted text using css text styles
+just adding a few more lines to test the 'justify' property </h2>
+<p style="font-family:Times New Roman;font-style:normal;font-size:2vw;font-weight:bold;"> Here to test fonts </p>
+<i class="fa fa-cloud"></i>
+<i class="fa fa-heart"></i>
+<i class="fa fa-car"></i>
+<i class="fa fa-file"></i>
+<i class="fa fa-bars"></i>
+<br />
+<a href="https://www.facebook.com"> Facebook</a>
+<ul class="a001">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+<div style="overflow-x:auto;">
+<table style="padding:500px;">
+  <th>Name</th>
+  <th>Branch</th>
+  <th>Location</th>
+  <tr>
+    <td>Eshwar</td>
+    <td>2.1</td>
+    <td>Waverock</td>
+  </tr>
+  <tr>
+    <td>Salma</td>
+    <td>2.1</td>
+    <td>Waverock</td>
+  </tr>
+  <tr>
+    <td>Gayatri</td>
+    <td>2.1</td>
+    <td>Waverock</td>
+  </tr>
+  <tr>
+    <td>Meenakshi</td>
+    <td>2.3</td>
+    <td>Waverock</td>
+  </tr>
+  <tr>
+    <td>Swetha</td>
+    <td>Kalajyothi</td>
+    <td>Kondapur</td>
+  </tr>
+  <tr>
+    <td>Aishwarya</td>
+    <td>Kalajyothi</td>
+    <td>Kondapur</td>
+  </tr>
+</table>
+</div>
+
+<div style="width:100px;height:90px;overflow:scroll;color:white;font-weight:bolder;">Testing overflow attribute</div>
+
+
+</body>
+</html>

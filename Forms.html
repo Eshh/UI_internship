@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+
+      <form onSubmit= "return NumberValidation()" method= post>
+
+
+        <input id = "NumVal">
+          <button type = "submit">Click to Validate</button>
+        </form>
+      </body>
+      <script>
+        function Validate(){
+          var f = document.forms["test"]["inp"].value
+          if(f == "") return window.alert("Please fill out the field")
+        }
+        function NumberValidation(){
+          var text
+          var x = document.getElementById("NumVal").value
+          if(isNaN(x) || x < 1 || x > 10) {
+            text = "Invalid Input"
+          }
+          else {
+            text = "valid Input"
+          }
+          document.write(text)
+        }
+
+
+    </script>
+</html>

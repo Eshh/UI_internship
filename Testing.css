@@ -1,0 +1,16 @@
+body {background-color: magenta}
+p {
+  color:rgb(0,150,0);
+  font-family:verdana;
+  border: 2px solid black;
+  padding: 50px;
+  text-align:center;
+  margin:20px
+}
+#eshh {
+    color:blue
+  }
+p.hey {
+  color:red
+
+}

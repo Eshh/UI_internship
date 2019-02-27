@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+
+    </body>
+    <script type="text/javascript">
+
+      var d = new Date(1997, 4, 23, 10, 23, 45, 7);
+      document.write(`<h2 style="color:orange;text-shadow:1px blue 1px black;border:1px solid red;width:100%;height:50px;background-image:linear-gradient(grey,black);">Date: ${d.toUTCString()}</h2>`)
+
+      document.write(typeof(d))
+      var ms = new Date(-8640087889000);
+      document.write(ms)
+      var iso = new Date("1997-05-23T10:23:56-05:30")
+      document.write(iso)
+      document.write(Date.parse("May 23 1996"))
+
+      var te = new Date();
+      document.write(`<h2 style="color:orange;text-shadow:1px blue 1px black;border:1px solid red;
+                      width:100%;height:50px;background-image:linear-gradient(grey,black);">Date: ${te.getFullYear()}
+        ${te.getMonth()} ${te.getDate()} ${te.getHours()} ${te.getMinutes()} ${te.getSeconds()} ${te.getMilliseconds()} ${te.getTime()}
+        ${te.getDay()}</h2>`)
+
+      var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      var na = new Date();
+      document.write(`<h2 style="color:orange;text-shadow:1px blue 1px black;border:1px solid red;
+                      width:100%;height:50px;background-image:linear-gradient(grey,black);">Today's Day: ${weekdays[na.getUTCDay()]}</h2>`)
+
+
+      var sett = new Date();
+      sett.setFullYear(1997)
+      sett.setMonth(4)
+      sett.setDate(23)
+      sett.setMinutes(20)
+      sett.setHours(21)
+      sett.setMilliseconds(786)
+      //  sett.setTime(4365328432756)
+      document.write(`<h2 style="color:orange;text-shadow:1px blue 1px black;border:1px solid red;width:100%;
+                      height:50px;background-image:linear-gradient(grey,black);">Date: ${sett}</h2>`)
+      document.write(sett > te)
+    </script>
+
+  </html>

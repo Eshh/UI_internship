@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <h4 id="demo"></h4>
+      <br />
+      <button onClick="this.style.color='red',this.style.width='100px'">Click to change my color</button>
+
+    </body>
+    <script type="text/javascript">
+      // This keyword used in a Method
+      var name = "Dabba"
+      var Gender = "Edoti"
+      var Age = "Bhumi puttinapdu"
+      var y = this
+      document.write(y)
+      var object = {
+        name : "Eshh",
+        Age : 21,
+        Gender : "Male",
+        Details : function()
+        {
+          return this.name + " " + this.Age + " " + this.Gender
+        }
+
+      }
+      document.getElementById("demo").innerHTML = object.Details()
+      var a = 20
+      debugger
+      function dummy()
+      {
+        a = 10
+        return this.a
+      }
+      document.write(dummy())
+      const s = 10
+      {
+        var q = 69
+        let w =96
+        // var w = 27
+        document.write(q)
+      }
+    </script>
+  </html>

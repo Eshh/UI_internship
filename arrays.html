@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+    </body>
+    <script>
+      var arr = [1, 3, 4, 5, "Eshh",  2];
+      document.write(typeof(arr));
+      arr2 = arr.sort();
+      for(var i = 0;i < arr2.length;i++)
+      {
+        document.write(`<h3> <br /> ${arr2[i]} </h3>`);
+      }
+      var objarr = [3, 8 ,0];
+      objarr[3] = 4;
+
+      for(var i = 0;i < 4;i++)
+      {
+        document.write(`<h3> <br /> ${objarr[i]} </h3>`);
+      }
+      document.write(Array.isArray(objarr));
+
+      test = [1, 2, 3, 4, 5, 6];
+
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.shift() + "</h2>");
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.unshift(1) + "</h2>");
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.pop() + "</h2>");
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.push(6) + "</h2>");
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.splice(1, 2, "lol","traitors") + "</h2>");
+      document.write("<h2> <br />" + test + "</h2>");
+      document.write("<h2> <br />" + test.join("*") + "</h2>");
+      //  delete test[2];
+      document.write("<h2> <br />" + test + "</h2>");
+      dummy = ["guest"];
+      home = test.concat(dummy);
+      document.write("<h2> <br />" + home + "</h2>");
+      document.write("<h2> <br />" + test.slice(2) + "</h2>");
+
+      var test2 = [1, 3, 6, 4, 5, 9, 8, 7];
+      document.write("<h2>" +test2+ "</h2>");
+      document.write("<h2>" +test2.sort()+ "</h2>");
+      document.write("<h2>" +test2.reverse()+ "</h2>");
+
+      test3 = ["25" , "100", "35", "27"];
+      document.write("<h2>" +test3.sort(function(a,b){
+        return a-b}) + "</h2>");
+
+      document.write("<h2>" +Math.max.apply(null, test3)+ "</h2>");
+
+      function dumb(name= "user",number = "+91")
+      {
+        document.write("<h1> Hello " + name + " your number is: " + number + "</h1>");
+      }
+      dumb("Eshh", "8374759459");
+
+      var each = ["abc", "def", "ghi", "jkl", "mno"];
+
+      each.forEach( function(item){
+        document.write(item + item);
+      }
+
+      );
+
+
+
+
+
+    </script>
+  </html>

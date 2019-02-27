@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A simple layout using float</title>
+    <style>
+    html{
+      background: url(bla.jpg) no-repeat center fixed;
+ background-size: cover;
+    }
+    @keyframes headie{
+      0%{transform:rotate(0deg)}
+      50%{transform:rotate(3deg)}
+      100%{transform:rotate(0deg)}
+
+
+
+    }
+      .head{
+        font-weight:bolder;
+        background-color:black;
+        color:orange;
+        padding:0;
+        margin:0;
+        height:55px;
+
+        text-align: center;
+        border: 30px solid transparent;
+
+        border-image: url(border.jpg ) 30% stretch;
+        position:sticky;
+        float:none;
+        transition: width 2s, height 2s, transform 2s;
+        animation-name: headie;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+       }
+
+.head:hover{
+transform: rotate(4deg);
+
+}
+@keyframes test {
+  0%{transform:translate(0px)}
+  50%{transform:translate(150px)}
+  75%{transform:translate(-150px)}
+  100%{transform:translate(0px)}
+
+
+}
+.head h1{
+
+  animation-name: test;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+      .container::after{
+        clear:both;
+        content:" ";
+        display:table;
+      }
+      .Desc{
+width:100%;
+        border:5px 5px 5px solid grey;
+        padding:15px;
+        font-weight: bolder;
+        color:white;
+        font-family: sans-serif;
+        font-size:20px;
+border-radius: 5px;
+  background-size: cover  ;
+  background-repeat: no-repeat;
+  transition: width 1s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+
+      }
+      .Desc:hover{
+        width:50%;
+
+      }
+      .tooltip{
+      visibility:hidden;
+      width:120px;
+      background-color:black;
+      color:white;
+      font-size:20px;
+      padding:5px 0;
+      text-align:center;
+      border-radius:6px;
+      text-align:center;
+      position:absolute;
+      z-index:1;
+    }
+    .tool. tooltip{
+      top:-5px;
+      left:50%;
+    }
+      .tool:hover .tooltip{
+        visibility: visible;
+      }
+      .tool:hover{opacity: 1}
+      .button{
+        padding:10px 14px;
+        background-color: orange;
+        font-style: normal;
+        font-weight:bolder;
+
+
+      }
+      .dropcontent{
+        display:none;
+      }
+      .dropdown:hover .dropcontent {
+  display: block;
+}
+
+        .images{
+          overflow-x:auto;
+          padding:10px 20px;
+          width:33.33%;
+          box-sizing:border-box;
+            float:right;
+          height:240px;
+
+      }
+      ul{
+        background-color:grey;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        list-style-type: none;
+        position:sticky;
+        top:0;
+      }
+      li{
+        color:orange;
+        font-size:20px;
+        padding:14px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-weight:bolder;
+        float:left;
+        display:inline-block;
+      }
+a:hover{
+  background-color: orange;
+}
+a:visited{
+  color:black ;
+}
+a:active  {
+  color:inherit;
+}
+
+
+a{
+  color:black;
+  padding:14px 16px;
+  text-decoration: none;
+}
+
+.events{
+background-image:  linear-gradient(white,grey);
+  color:black;
+  transition: width 2s, height 2s, transform 2s;
+
+  transform: skewX(20deg);
+
+}
+.events:hover{
+  transform: rotate(360deg);
+}
+.se{
+  color:black;
+  float:none;
+}
+textarea{
+  transition: width 0.4s ease-in-out;
+}
+textarea:focus{
+  width:100%
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header class="head" >
+
+      <h1>Visakhapatnam The city of Destiny</h1>
+    </header>
+
+    <table>
+      <th style="border-bottom:1px solid black;font-size: 20px;font-family:courier;text-shadow:3px 3px black;color:white;"> Major tourist attractions </th>
+    </table>
+<div class="container">
+  <div class="images">
+    <p style="font-weight:bold;font-family:monospace;font-size:20px;text-shadow:3px 3px 3px black;color:white;"><img src="1.jpg" style="float:left;width:170px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+height:200px;margin-left:5px;"></img>The Rishikonda Beach stands as one of the
+    major attractions with its blue water and joyful environment</p>
+</div>
+  <div class="images">
+  <p style="font-weight:bold;font-family:monospace;font-size:20px;text-shadow:3px 3px black;color:WHITE;"> <img src="4.jpg" style="float:left;width:200px;height:200px;margin-left:15px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+"></img>
+    Araku Valley,The beautiful hill station located at an altitude of over 2000metres
+  is a must visit in visakhapatnam</p>
+  </div>
+  <div class="images">
+  <p style="color:white;font-weight:bold;font-family:monospace;font-size:20px;text-shadow:3px 3px black;">  <img src="5.jpg" style="float:left;width:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+height:200px;margin-left:15px;"></img>
+    The kurusura submarine stands as an epitome
+  of history and excellence on the banks of RK Beach</p>
+  </div>
+</div>
+<h2 class="tool" style="display:inline-block;width:50%;height:20px;opacity:0.5;transition:0.3s;cursor:pointer;"><a href="C:\Users\Eswar\Documents\INNOMINDS 2.3\CSS\support_travel.html"style="color:black;background-image:linear-gradient(white,grey);position:relative;">Click here to see more..</a>
+  <span class="tooltip" >For a list of places</span><h2>
+
+<div class="Desc">Get Thrilled
+  <p style="font-size:18px;">Indulge yourself in a city of history and scenic nature,<br />
+  A never ending exploration amidst the beauty and fall in love</p>
+</div>
+
+<ul>
+  <li><a href="https://www.apsrtconline.in/"style="border-radius:25px;">Tickets</a></li>
+<li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj1stKq5ZfgAhXECCoKHdnSAzkYABAAGgJ0bQ&ohost=www.google.com&cid=CAESEeD22EDKHCU4T2Q48MoZDkwF&sig=AOD64_1TNvRo1oH4vDopIJB3_SkYQyiQ8A&q=&ved=2ahUKEwjx88mq5ZfgAhUXiXAKHTYXBZEQ0Qx6BAgMEAE&adurl="style="border-radius:25px;">
+Book Hotels</a></li>
+<li><a href="https://www.google.com/maps?rlz=1C1CHBF_enIN806IN806&q=vizag+map+guide&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiShNj25ZfgAhWPiHAKHSQ_CLYQ_AUIDygC" style="border-radius:25px;">MAP</a></li>
+<li><a href="https://www.tourhq.com/india/visakhapatnam-tours-guide" style="border-radius:25px;border-radius:25px;">Local Guide</a></li>
+<li><a href="https://www.appolice.gov.in/jsp/emergency.jsp"style="border-radius:25px;">Emergency</a></li>
+</ul>
+<h3 style="text-align:center;font-size:25px;text-shadow:3px 3px black;color:white;"> Upcoming events list </h3>
+<ul class="events" position="fixed">
+<li class="se"style="display:block;">Venomous Valentine</li>
+<li class="se"style="display:block;">IACE International congress</li>
+<li class="se" style="display:block;" >Dj Shadow Live concert</li>
+<li class="se" style="display:block;">Parade in MGM Grounds</li>
+</ul>
+
+
+<h2 style="text-align:center;text-shadow:3px 3px black;color:white;"> Enroll yourself for a special travel package </h2>
+<form style="display:list-view;background-image:linear-gradient(grey,grey,white);">
+  <fieldset>
+    <p> Enter your name</p>
+  <input type="text" name="First name" placeholder="First name" style="padding:5px;">
+  <input type="text" name="Last Name" placeholder="Last Name" style="padding:5px;">
+
+  <P>Enter your Date of Birth</p>
+    <input type="datetime-local" name="dummy" style="padding:5px;">
+
+  <p>Enter your age</p>
+  <input type="text" name="Age" placeholder="Age" style="padding:5px;">
+  <p>Select your Gender</p>
+  <input type="radio" name="gender" value="Male">Male <br />
+  <input type="radio" name="gender" value="female">Female <br />
+
+  <input type="radio" name="gender" value="other">Other <br />
+<p>Enter your email</p>
+<input type="email" style="padding:5px;">
+<p>Enter your mobile number</p>
+<input type="tel" name="mobile" placeholder="10-digit mobile number">
+  <p>Please select your budget</p>
+  <input list="budget" placeholder="click to get a list" style="background-color:white;padding:5px">
+  <datalist id="budget" >
+    <option  >5000-9999</option>
+    <option>9000-15999</option>
+    <option>16000-24999</option>
+    <option>25000+</option>
+  </datalist>
+  <p>Please describe your requirements in less than 50 words</p>
+<textarea rows="5" cols="50"></textarea>
+  <p>Please choose your package from the drop down menu below</p>
+  <select name="dropdownbox" multiple style="background-color:white;color:black;padding:5px;">
+    <option>Araku family package</option>
+    <option>City Mascot</option>
+    <option>Lavishly Local</option>
+    <option>Green Country(Rural)</option>
+  </select>
+  <br />
+<br />
+  <input type=reset style="padding:5px;">
+<br />
+<br />
+  <input type="submit" name="Submit" style="padding:5px;">
+
+</fieldset>
+</form>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <form id = "demo" >
+        <h2>"Please Enter a number between 10 and 100"</h2>
+        <input id = "case" type = "number" max = 100 min = 10 maxLength = 5 required></input>
+        <br />
+        <input type = "submit" onClick = "return myFun()"></input>
+      </form>
+    </body>
+    <script type="text/javascript">
+      function myFun(){
+        var x = document.getElementById("case")
+        if(x.checkValidity()){
+          document.write("yipee")
+        }
+        else {
+          document.write(x.validity.valid)
+        }
+      }
+      var heading = document.querySelector('h1')
+      heading.textContent = 'Hello World'
+  </script>
+</html>

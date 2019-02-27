@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+
+    </body>
+    <script type="text/javascript">
+
+      var scheduler = {
+        day : "Monday",
+        Meetings : 0,
+        Meetings_done : 0
+      }
+      var x = 0;
+      for(x in scheduler)
+      {
+        document.write(`<h1> ${scheduler[x]} </h1>`);x
+      }
+      var update = function(toDo, neww)
+      {
+          toDo.Meetings = toDo.Meetings + neww;
+      }
+      update(scheduler, 10);
+      var p =0;
+      for(p in scheduler)
+      {
+        document.write(`<h1> ${scheduler[p]} </h1>`)
+      }
+
+      var finished = function(toDo, newww)
+      {
+        toDo.Meetings = toDo.Meetings - newww;
+        toDo.Meetings_done = toDo.Meetings_done + newww;
+      }
+      document.write(`<h2> I finished 6 meetings</h2>`)
+      finished(scheduler, 6);
+      var p =0;
+      for(p in scheduler)
+      {
+        document.write(`<h1> ${scheduler[p]} </h1>`)
+      }
+      var reset = function(toDo)
+      {
+        toDo.Meetings = 0;
+        toDo.Meetings_done = 0;
+      }
+      reset(scheduler);
+      var j =0;
+      for(j in scheduler)
+      {
+        document.write(`<h1> ${scheduler[j]} </h1>`)
+      }
+  </script>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>part-4</title>
+    <style>
+    .grid_parent{
+      border:1px solid black;
+      padding:5px;
+      margin:px;
+      text-align: center;
+      display: grid;
+      font-size:25px;
+      grid-template-columns: auto auto auto;
+    }
+    .grid_child{
+      border:1px solid blue;
+      text-align: center;
+      font-size: 200px;
+    }
+
+    @media screen or (min-width:10px){
+      body{
+        background-color: green;
+      }
+    }
+      *{
+        box-sizing:border-box;
+      }
+      body{
+        background-color: red;
+        margin:0;
+      }
+
+      .fb{
+        background-color:Dodgerblue;
+        display:flex;
+        height:300px;
+        flex-flow:row wrap;
+        justify-content:center;
+        align-items:center;
+        align-content:flex-end;
+
+      }
+      .imagegallery{
+        display:flex;
+        flex-wrap:wrap;
+      }
+      .column{
+        flex:30%;
+        padding:0 4px
+
+      }
+      .fb > div{
+        border:1px solid black;
+        width:100px;
+        text-align:center;
+        margin:10px;
+        font-size:25px;
+        background-color:white;
+        margin:10px;
+      }
+      .box{
+
+        position:relative;
+        display:inline-block;
+      }
+      .text{
+        visibility:hidden;
+        width:120px;
+        background-color:black;
+        color:white;
+        padding:5px 0;
+        text-align:center;
+        border-radius:6px;
+        text-align:center;
+        position:absolute;
+        z-index:1;
+
+
+      }
+      .box:hover .text {
+  visibility: visible;
+}
+:root{
+  --variable:blue;
+}
+.mulcol{
+  resize:both;
+  background-color:var(--variable);
+  overflow:auto;
+  border:1px solid black;
+  outline-offset:10px;
+  column-count:4;
+  column-gap:20px;
+  column-rule-style:solid;
+  column-rule-width:2px;
+  column-rule-color:cyan;
+  column-width:100px;
+  column-span:all;
+}
+    </style>
+  </head>
+  <body>
+    <div class="box">Hover over me
+      <span class="text">Tooltip text</span>
+    </div>
+    <div class="mulcol">
+Summer after high school when we first me,we make out in your mustang to radio head and on my 18th birthday we bought matching tattoos,
+we used to steal your parents liquor and climb to the roof,talk about our future like we had a clue,never planned that one day i'd be losing you!
+but in another life i would make you stay,we keep full of promises 'be us against the world'
+and in another life i would make you stay,so i dont have to say you were the one that got away
+i was june and you were my jhonny cash,never one without the other,we made a pact,
+sometimes when I miss you,i'd put those records on.
+Someone said you had your tatoo removed,saw you downstairs singing the blues,
+its time to play some music,i'm no longer your muse.
+but in another life i would make you stay,we keep full of promises 'be us against the world'
+and in another life i would make you stay,so i dont have to say you were the one that got away
+all his money cant buy me a time machine..nooo,cant replace you with a million rings,nooo
+i should have told you what you meant to me,coz now I pay the price
+but in another life i would make you stay,we keep full of promises 'be us against the world'
+and in another life i would make you stay,so i dont have to say you were the one that got away
+    </div>
+<br />
+    <span style="outline:1px solid black;outline-offset:6px;border:1px solid red;" >
+      i am protected by an offset
+    </span>
+    <br/>
+    <br />
+    <br /> <br />
+
+<div class="fb">
+  <div style="order:10">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div style="flex-basis:300px">15</div>
+  </div>
+
+<div class="imagegallery">
+<div class="column">
+  <img src="fightclub_1280.png" style="width:100%"></img>
+  <img src="lam.jpg" style="width:100%"></img>
+  <img src="sim.jpg" style="width:100%"></img>
+</div>
+<div class="column">
+  <img src="kai.jpg" style="width:100%"></img>
+  <img src="bor.jpg" style="width:100%"></img>
+  <img src="3.jpg" style="width:100%"></img>
+</div>
+<div class="column">
+  <img src="b.jpg" style="width:100%"></img>
+  <img src="zoo.jpg" style="width:100%"></img>
+  <img src="sea.jpg" style="width:100%"></img>
+</div>
+<hr />
+<br />
+<div class="grid_parent">
+  <div class="grid_item">1</div>
+  <div class="grid_item">2</div>
+  <div class="grid_item">3</div>
+  <div class="grid_item">4</div>
+  <div class="grid_item">5</div>
+  <div class="grid_item">6</div>
+
+</div>
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="HelloWorld.js" type="text/javascript">
+
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2 id='gh'></h2>
+
+      <button onclick = window.alert("hey")>Click me </button>
+      <button onclick = document.getElementById("hu").innerHTML=Date();>Get the Date </button>
+      <p id = "hu"></p>
+      <button onclick = this.innerHTML=Date();>Transfrom to Date </button>
+      <button onclick=displayDate()>Function assosc</button>
+      <button onclick=strlength()>Click to see no of letters in h1111jfghjfgvhdsgvhvgh</button>
+
+      <p id = "sc"></p>
+  </body>
+  <script type="text/javascript">
+  var ze = "Heey I am \"heya\" backslash hahahayhayahahahha \ shgdfhghchds";
+  document.getElementById("sc").innerHTML= ze;
+  function strlength()
+  {
+   var str = "h1111jfghjfgvhdsgvhvgh";
+   document.write(`<h2>${str.length}</h2`)
+  }
+  function displayDate()
+  {
+    document.write(Date());
+  }
+    document.getElementById("gh").innerHTML= "Passed via external JS File";
+    var z = "Eshwar";
+    var a = "is great";
+    p = z +"-"+ a;
+    var t;
+    const j = 10;
+    // j = 20;
+    document.write(p);
+
+    var Pk= 189659;
+    alert(typeof(Pk));
+    console.log(typeof(t));
+    var n = 1 , h = 2;
+  </script>
+  <script type="text/javascript">
+    var a1 = 10;
+    var a2 = 20;
+    var sum = a1 + a2;
+    document.write("<h1> Result: "+ sum +" </h2>");
+    var assosc = "1" + 2 + "hey" + 1 + 2;
+    document.write("<h1> Result: "+ assosc +" </h2>");
+    var preced = 1 * 2 + 5;
+    var ter;
+    document.write("<h1> Result: "+ ter +" </h2>");
+
+    document.write("<h1> Result: " + preced + " </h2>");
+    document.write("<h1> Result: " + 9 % 3 + " </h2>");
+    tern = (7 < 10);
+    tern;
+    document.write("<h1>Ternary: " + tern + "</h2>");
+    document.write("<h1> Result: "+ typeof(tern) +" </h2>");
+
+    var cs = 11;
+    //Control statements IF-ELSE
+
+    if(true){
+    var  global = "pay";
+      document.write(global);
+    }
+    document.write(global);
+    if(cs % 2==0)
+    {
+      document.write("<h1> " + cs + " is Even number"+ "</h2>");
+
+    }
+    else
+      {
+        document.write("<h1> " + cs + " is Odd number"+ "</h2>");
+
+      }
+    var sign = -21;
+    if(sign > 0){
+      document.write("<h1>" + sign + " is Positive"+ "</h2");
+    }
+    else if (sign < 0) {
+      document.write("<h1>" + sign + " is Negative"+ "</h2");
+    }
+    else
+      {
+        document.write("<h1>Zero</h2>");
+
+      }
+      var pe = -21;
+      document.write("<br />");
+      if(pe > 0)
+      {
+          document.write("<h1>" + pe + "is positve"+ "</h2>")
+          if(pe % 2==0)
+          {
+            document.write("<h2>And its an even number</h2>");
+          }
+          else
+           {
+             document.write("<h2>Its an Odd number</h2>");
+           }
+       }
+       var pur = "Hey I am the coolEst editor called Atom";
+       document.write("<br />"+pur);
+       document.write("<br />"+ pur.indexOf("z"));
+    </script>
+    </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <img src = "sea.jpg" ></img>
+    </body>
+    <script>
+      var image = document.querySelector('img')
+      image.onclick = function() {
+        var source = image.getAttribute('src')
+        if(source === 'zoo.jpg')
+        {
+          image.setAttribute('src', 'sea.jpg')
+        }
+        else {
+          image.setAttribute('src', 'zoo.jpg')
+          
+        }
+      }
+        </script>
+        </html>

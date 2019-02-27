@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title>Input Validation</title>
+
+      <body>
+        <h4>Please Enter a number between 5 and 10</h4>
+        <input id="demo" type ="text">
+          <br />
+          <br />
+          <button style="margin-left:30px;padding:9px;" type = "button" onClick = "validation()">Click to validate</button>
+          <h3 id="case"></h3>
+          </br >
+          <h2 id="output"></h2>
+        </body>
+        <script type="text/javascript">
+          function validation()
+          {
+            var x
+            var message
+            message = document.getElementById("case")
+            message.innerHTML = ""
+            x = document.getElementById("demo").value;
+            try {
+
+              if(x == "")   throw "empty"
+              if(isNaN(x))  throw "Not a Number"
+
+              x = Number(x)
+
+              if(x < 5) throw "too small"
+              if(x > 10) throw "too large"
+              var z = document.getElementById("output")
+              z.innerHTML = "Hurrah,You gave the correct input viz " + x
+            }
+            catch (err) {
+                message.innerHTML = "input is " + err
+
+            }
+
+
+          }
+
+
+        </script>
+      </html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    var car = {
+      name : "Mercedes",
+      price : 30000,
+      model : 2016
+    }
+    document.write("<h2>" + car.name +" "+ car.price +" "+ car.model+ "</h2>");
+
+      car.country = "India";
+    document.write("<h2>Manufactured in " + car.country + "</h2>");
+
+    var x;
+    var arr1 = [];
+    for (x in car)
+    {
+      arr1.push(car[x]);
+    }
+    document.write(arr1);
+    
+
+   function bikes(bname, bprice, byear)
+   {
+     this.bname = bname;
+     this.bprice = bprice;
+     this.byear = byear;
+     this.review = function()
+     {
+       document.write("<h2>Best in the year " + this.byear + "</h2>");
+     }
+   }
+   var r15 = new bikes("Yamaha R15 version-3",150000,2018);
+   r15.review();
+   var duke = new bikes("KTM Duke 200",180000,2015);
+   var bullet = new bikes("Royal Enfield",170000,2010);
+   document.write(`<h2> ${bullet.bname}</h2>`)
+   document.write(`<h2> ${duke.bname}</h2>`)
+
+
+  </script>
+</html>

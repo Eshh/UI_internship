@@ -1,0 +1,203 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <style>
+    body {background-color:yellow}
+    h2 {color:rgb(0,255,0)}
+    </style>
+    </head>
+<title> Level-2 HTML </title>
+<body>
+<bdo dir="rtl" style="color:rgb(0,255,0);"> THis is written from right to left </bdo>
+<p style="border:2px solid green; color:rgb(0,255,0)"> Bordered </p>
+<!-- Internal styling demonstration -->
+<h2> Internally Styled Heading </h2>
+<p class="sample">I belong to the class sample</p>
+<h3 class="sample"> I am a heading of sample class</h3>
+
+<style>
+  p.sample{
+    color:yellow;
+  }
+  h3.sample{
+    color:yellow;
+  }
+</style>
+
+  <a class="saamp" href="https://www.techcrunch.com" title="go to techcrunch website"><h3> Technology website</h3> </a>
+<style>
+
+  a.saamp{
+    color:red;
+  }
+  :hover{
+    color:grey;
+  }
+</style>
+
+<h5 id="ch4">Chapter 4</h5>
+<a href="#ch4"> Jump to chapter 4</a>
+<hr>
+<img src="fightclub_1280.png" style="width:300px;height:300px" alt="An image of fight club">
+<!-- Images from different folder -->
+<img src="C:\Users\Eswar\Pictures\Fight Club\Fight-Club-Home-Game-Mondo-Tees.jpg" style="width:300px;height:300px" alt="An image of fight club" title="Cult">
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" width:300px height="300px">
+<br>
+<h1> This image is a link </h1>
+<a href="https://en.wikipedia.org/wiki/Fight_Club" target="_blank"> <img src="C:\Users\Eswar\Pictures\Fight Club\fight_club_t.jpg"  width:200px height:200px"></a>
+<br>
+<h2> Click on the image to get additional references </h2>
+<img src="C:Users\Eswar\Pictures\download.jpg" usemap="#maps">
+<map name="maps">
+  <area shape=rect coords="10,20,120,160" href="https://www.google.com/search?q=image+of+computer&rlz=1C1CHBF_enIN806IN806&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjImtirv4TgAhUFOSsKHWAKAiQQ_AUIDigB&biw=1366&bih=664#imgrc=ButTaxBz276fTM:">
+  </map>
+  <p style="background-image:url('fightclub_1280.png');color:black;">
+     HEYAA let us see if the image gets displayed on the background
+  though there's nothing much to type,i still had to just to get a big paragraph to support a backgound image
+</p>
+
+<table >
+  <caption style="color:white;"> Just an example </<caption>
+
+  <style>
+  table,th,td{
+    border: 1px solid white;
+    border:collapse:collapse;
+    padding:5px
+  }
+  th{
+    text-align:right;
+    }
+table{
+  border-spacing:5px;
+
+}
+td {
+  rowspan="2";
+}
+table#t01
+{
+background-color:white;
+}
+  </style>
+  <tr>
+    <th colspan="3" style="text-align:center;">A table</th>
+    </tr>
+  <tr >
+    <th rowspan="1"> Name </th>
+    <th>Age</th>
+    <th>Sex</th>
+    </tr>
+    <tr>
+      <td>Eshwar</td>
+      <td>20</td>
+      <td>Male</td>
+</table>
+<table id="t01">
+  <tr>
+    <td>some shit </td>
+
+  </tr>
+  </table>
+
+<ul style="list-style-type:none;">
+  <li > one </li>
+  </ul>
+  <ol type="I">
+  <li>hey</li>
+  <li>hey</li>
+
+  </ol>
+  <dl>
+    <dt>Eshwar</dt>
+    <dd>Sophisticatedly stupid</dd>
+    </dl>
+    <ol>
+      <li>something</li>
+      <ul>
+        <li>nested list example </li>
+        </ul>
+        </ol>
+        <ol start="20" <li>woah</li>
+          <li>haha</li>
+          </ol>
+
+
+      <style>
+        ul {
+          list-style-type:none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #333333;
+         }
+          li {
+            display: inline
+             color: white;
+             text-align: center;
+             padding: 16px;
+             text-decoration: none;
+          }
+          li a:hover {
+  background-color: black;
+}
+li {
+  float:left;
+} </style>
+<h2> Navigation Menu </h2>
+        <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<div style="color:red; background-color:black;"> Testing div tag </div>
+<span style="color:red; background-color:black;">Testing span tag </span>
+<div style="color:blue;font-family:Arial">
+  <h1> Heading styled using div+css</h1>
+  <p>This is it</p>
+  <span style="color:black;"> I am exclusive babe </span>
+  </div>
+<style>
+  .cities{
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-family:verdana;
+  }
+  .note {
+    font-family:arial;
+    font-size:30px;
+    color:magenta;
+  }
+  </style>
+  <div class="cities" >
+    <p> Delhi is the capital of India </p>
+    <p> Islamabad is the capital of Pakistan </p>
+    </div>
+    <div class="cities" >
+      <p> Hyderabad is the capital of Telangana </p>
+      <p> Chennai is the capital of Tamil nadu </p>
+      </div>
+
+<style>
+  .main {
+    color:cyan;
+  }
+  .city {
+    font-size:50px;
+  }
+  .third {
+    font-family:courier;
+  }
+  </style>
+<span class="note"> i am styled using css with a class name</span>
+<h2 class="main next third">I belong to 3 different classes</h2>
+<style>
+  #testid {
+    background-image:url('fightclub_1280.png')
+  }
+  </style>
+  <span id="testid"> This is to test functioning of an id </span>
+  </body>
+</html>

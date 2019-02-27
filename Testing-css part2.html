@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Testing part-2</title>
+    <style>
+      ul{
+        background-color:red;
+        overflow:auto;
+        padding:0px;
+        margin:0;
+        color:black;
+list-style-type:none;
+overflow:hidden;
+      }
+      li{
+        float:left;
+      }
+      li a{
+        display:inline-block;
+        font-weight:bolder;
+        font-size:20px;
+        color:black;
+        padding:14px 16px ;
+        text-align:center;
+        text-decoration:none;
+      }
+      a:hover{
+        background-color:orange;
+      }
+      a:unvisited{
+        text-decoration:none;
+      }
+
+      }
+      a{
+        text-decoration:none;
+
+      }
+      .box{
+        width:33.3333%;
+        padding:50px;
+        float:left;
+        background-color:grey;
+        box-sizing:border-box;
+height:200px;
+      }
+      img {
+        height:300px;
+        float:right ;
+      }
+      div{
+        clear:right;
+        overflow:auto;
+      }
+
+      .clearflix::after{
+        content:" ";
+        clear:both;
+        display:table;
+      }
+      .container{
+        overflow:auto;
+        padding:50px;
+        width:33.33%;
+        box-sizing:border-box;
+        float:left;
+        height:500px;
+      }
+      .imgs::after{
+        clear:both;
+        content:" ";
+        display:table;
+      }
+      </style>
+  </head>
+  <body>
+    <div style="border:1px solid black;height:200px;">
+    <p style="font-weight:bolder; "><img src="city.jpg" width="500px" height="400px" alt="city"></img>
+We are testing yhe float property by giving some random text around random image
+and see how it works</p>
+</div>
+<div >
+<div class="box">
+  <p>Testing grid using float property</p>
+  </div>
+  <div class="box" style="background-color:red;">
+    <p>Another box to support grid</p>
+    </div>
+    <div class="box" style="background-color:blue;">
+      <p>Another box to support grid</p>
+      </div>
+    </div>
+    <div class="imgs">
+      <div class="container" >
+        <p><img src="fightclub_1280.png"></img></p>
+        </div>
+        <div class="container" >
+          <p><img src="city.jpg"></img></p>
+          </div>
+          <div class="container">
+            <p><img src="salma.jpg"></img></p>
+            </div>
+          </div>
+<ul>
+  <li><a href="https://www.Facebook.com">Facebook</li>
+    <li><a href="https://www.Instagram.com">Instagram</li>
+      <li><a href="https://www.Twitter.com">Twitter</li>
+        <li><a href="https://www.Skype.com">Skype</li>
+</ul>
+
+<div class="span">Hey yeah,here to test inline-block element</div>
+  </body>
+</html>

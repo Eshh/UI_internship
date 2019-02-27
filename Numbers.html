@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <p id ="de" style="font-size:25px;"></p>
+    </body>
+    <script>
+      var n = 10;
+      document.write(n);
+      var x = 999999999999999;
+      document.write(x);
+      var y = 99999999999999999;
+      document.write(y);
+      var p = 20;
+      var s = "40";
+      var j = n + p + s;
+      document.write(`${j}`)
+
+      var se = "100";
+      var te = "3"
+      var be = se/te
+      var na = NaN;
+      document.write(be)
+      document.write(isNaN(se));
+      document.getElementById("de").innerHTML= typeof(na);
+      var fe = 100 / 0;
+      document.write(fe)
+
+      var li = 120;
+      document.write(typeof(li.toString()))
+      var dw = 10.12345
+      document.write(dw.toFixed(2))
+      document.write(dw.toPrecision(4))
+      document.write(`<h2><br /> ${Number(new Date("1997-05-23"))}</h2>`)
+      document.write(`<h2><br /> ${Date()}</h2>`)
+
+      document.write(`<h2><br /> ${parseInt("123 years")}</h2>`)
+
+
+    </script>
+
+</html>

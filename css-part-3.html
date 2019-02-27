@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+
+    keyframes anim{
+      from{transform:rotate(0deg)}
+      to{transform:rotate(180deg)}
+    }
+    .anime{
+
+      border:1px solid black;
+      text-align:center;
+      animation-name: anim;
+      animation-duration: 4s;
+    }
+    q:lang(no){
+      quotes: "~" "~";
+    }
+    p{
+      display:none;
+    }
+    img{
+      opacity:0.5;
+    }
+img:hover{
+  opacity:1.0;
+}
+div.textbox{
+  background: url("1.jpg") repeat;
+  margin:30px;
+  height:125px;
+}
+div.transbox{
+  background-color: orange;
+  opacity:0.5;
+  text-align: center;
+  border:2px solid black;
+  margin:5%;
+}
+        p:first-child{
+      color:blue;
+    }
+    p::first-letter{
+      font-size:25px;
+    }
+
+    div:hover p{
+      display:block;
+    }
+      .align{
+        margin:auto;
+        border:1px solid black;
+        width:50%;
+      }
+    .image{
+        height:250px;
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+      }
+      .alignn{
+        text-align:center;
+        border:1pxsolid green;
+      }
+      body{
+        counter-reset: sec;
+      }
+      h2::before{
+        counter-increment: sec;
+      }
+
+      ul{
+        list-style-type: none;
+        background-color: black;
+        color:white;
+        width:30%
+        margin:0;
+        padding:0;
+        float:left;
+
+      }
+      li{
+        border-right: 1px solid white;
+        padding:12px;
+        display:block;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      li:hover{
+        color:orange;
+        background-color: blue;
+      }
+      .span{
+        border:1px solid black;
+        padding:3px 4px;
+        background-color:black;
+        color:white;
+        margin:2px;
+        text-align:center;
+        display:inline-block;
+        height:30px;
+        width:30px;
+      }
+      ::selection{
+        color:orange;
+        background-color: black;
+      }
+      </style>
+    <meta charset="utf-8">
+    <title>CSS Part 3</title>
+  </head>
+  <body>
+    <p>Hey yeah,here to test inline-block element,so these two numbers <span class="span">1</span> and <span class="span">2</span>
+    would be our test cases</p>
+<div class="align">I am centered </div>
+<div class="alignn">I am centered </div>
+<img class="image" src="city.jpg"></img>
+<div> Hover here
+  <p>I am immediate sibling</p>
+<p>I am third sibling</p>
+</div>
+<span>Some text<q lang="no">I am quoted</q></span>
+<h1>Some heading to test selection pseudo element</h1>
+<img src="3.jpg" style="width:170px;height:170px;"></img>
+<div class="textbox">
+  <div class="transbox"> Hey i am some text</div>
+</div>
+<ul>
+  <li>one</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+<hr />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /> <br/> <br />
+  <h2>I studied HTML</h2>
+  <h2>I am working on CSS</h2>
+  <h2>I have to start Javascript</h2>
+  <div class="anime">
+    oh yeah!
+
+  </div>
+
+  </menu>
+  </body>
+</html>
